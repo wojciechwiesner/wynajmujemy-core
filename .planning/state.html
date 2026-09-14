@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wynajmujemy.xyz — Project Cockpit</title>
+  <style>
+    :root {
+      --bg: #0d0e12;
+      --card-bg: #161820;
+      --border: #232733;
+      --text-main: #f0f2f8;
+      --text-dim: #9aa1b5;
+      --accent: #3b82f6;
+      --accent-success: #10b981;
+      --accent-warn: #f59e0b;
+      --accent-danger: #ef4444;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    body { background: var(--bg); color: var(--text-main); padding: 24px; line-height: 1.5; }
+    .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+    .header h1 { font-size: 20px; font-weight: 600; }
+    .badge-success { background: rgba(16, 185, 129, 0.15); color: var(--accent-success); padding: 4px 10px; border-radius: 6px; font-size: 13px; font-weight: 500; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+    .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+    .card h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim); margin-bottom: 14px; }
+    .metric { font-size: 32px; font-weight: 700; color: var(--accent-success); margin-bottom: 6px; }
+    ul.check-list { list-style: none; }
+    ul.check-list li { display: flex; align-items: center; gap: 10px; font-size: 14px; margin-bottom: 8px; color: var(--text-main); }
+    .icon-pass { color: var(--accent-success); font-weight: bold; }
+    .footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-dim); display: flex; justify-content: space-between; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h1>Wynajmujemy.xyz — Backend Module Cockpit</h1>
+      <p style="color: var(--text-dim); font-size: 13px;">B2B space rentals platform for beauty, massage, wellness and training spaces</p>
+    </div>
+    <div>
+      <span class="badge-success">DoD PASS (25/25 Tests)</span>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Test Execution Status</h2>
+      <div class="metric">25 / 25 PASS</div>
+      <p style="color: var(--text-dim); font-size: 13px;">Coverage: Models, 5D Compliance, Art. 398 PKE, SSRF, FastAPI REST Routes</p>
+    </div>
+
+    <div class="card">
+      <h2>SOTA Invariants Guard</h2>
+      <ul class="check-list">
+        <li><span class="icon-pass">&#x2713;</span> Art. 398 PKE Outbound Marketing Block Active</li>
+        <li><span class="icon-pass">&#x2713;</span> 5D Source Permission Engine Active</li>
+        <li><span class="icon-pass">&#x2713;</span> SSRF Defense Active (Private & Metadata IPs Blocked)</li>
+        <li><span class="icon-pass">&#x2713;</span> Optimistic Locking (SHA-256 draft_hash + version)</li>
+        <li><span class="icon-pass">&#x2713;</span> High-Risk Profile Review Routing (beauty_med, tattoo_pmu)</li>
+        <li><span class="icon-pass">&#x2713;</span> Public Catalog Isolation (Drafts/Awaiting strictly hidden)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Delivered Modules</h2>
+      <ul class="check-list">
+        <li><span class="icon-pass">&#x2713;</span> <code>models.py</code> — Pydantic v2 domain models</li>
+        <li><span class="icon-pass">&#x2713;</span> <code>compliance.py</code> — Policy engine & PKE compliance</li>
+        <li><span class="icon-pass">&#x2713;</span> <code>server.py</code> — FastAPI REST application</li>
+        <li><span class="icon-pass">&#x2713;</span> <code>test_wynajmujemy.py</code> — 25 verification tests</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Last updated: 2026-09-14</span>
+    <span>Wynajmujemy.xyz MVP — Wroclaw Pilot</span>
+  </div>
+</body>
+</html>

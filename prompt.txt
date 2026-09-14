@@ -1,0 +1,7 @@
+Zadanie z oficjalnej specyfikacji Wynajmujemy.xyz (/Users/wojciechwiesner/Downloads/wynajmujemy_xyz_specyfikacja_v1.md):
+1. Przeanalizuj specyfikację Wynajmujemy.xyz w pliku /Users/wojciechwiesner/Downloads/wynajmujemy_xyz_specyfikacja_v1.md.
+2. Zaimplementuj w bieżącym katalogu roboczym działający moduł backendowy:
+   - models.py: Modele danych (Pydantic v2 / SQLModel) dla zasobów (gabinety/stanowiska/sale, profile branżowe, deklarowana dostępność, źródła ofert).
+   - compliance.py: Silnik sprawdzania uprawnień źródła (discovery, fetch, media, republish, outbound) z blokadą nieautoryzowanego marketingu (art. 398 PKE).
+   - server.py: API FastAPI z trasami rejestracji gospodarza, szkicu, podglądu i zatwierdzenia publikacji.
+3. Napisz testy weryfikacyjne w test_wynajmujemy.py i uruchom je poleceniem terminala, aby potwierdzić działanie (DoD PASS).
