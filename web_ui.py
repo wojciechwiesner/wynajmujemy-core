@@ -1090,7 +1090,7 @@ def get_frontend_html() -> str:
       if (filtered.length === 0) {
         container.innerHTML = `
           <div style="grid-column: 1/-1; text-align:center; padding:48px 0; color:var(--text-dim);">
-            <div style="font-size:1.8rem; margin-bottom:8px;">🔍</div>
+            <div style="font-size:0.9rem; font-family:var(--font-mono); color:var(--text-dim); margin-bottom:8px;">[ NO LISTINGS FOUND ]</div>
             <p>${currentLang === 'en' ? 'No spaces match your selected filters.' : 'Brak wolnych lokali dla wybranych filtrów.'}</p>
           </div>
         `;
