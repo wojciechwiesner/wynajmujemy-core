@@ -1,5 +1,8 @@
 # Wynajmujemy.xyz — Backend Module (MVP)
 
+> **Live Production API & Swagger UI**: [https://wynajmujemy.theones.io/docs](https://wynajmujemy.theones.io/docs)  
+> **Health Check**: [https://wynajmujemy.theones.io/health](https://wynajmujemy.theones.io/health)
+
 > **B2B Marketplace for professional space rentals**: Offices, consulting rooms, workstations, and training halls (`gabinety, stanowiska, sale szkoleniowe`).
 
 Platform connecting hosts with surplus space (beauty salons, massage studios, medical practices, coworking spaces) with verified professionals seeking flexible workspace without long-term commitments.
