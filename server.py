@@ -18,7 +18,10 @@ from typing import Any, Optional
 import uuid
 
 from fastapi import Depends, FastAPI, HTTPException, Header, Query, status
+from fastapi.responses import HTMLResponse
 from pydantic import BaseModel, Field
+
+from web_ui import get_frontend_html
 
 from compliance import (
     ComplianceEngine,
@@ -154,6 +157,14 @@ def get_current_host(authorization: Optional[str] = Header(default=None)) -> Hos
             headers={"WWW-Authenticate": "Bearer"},
         )
     return db.hosts[host_id]
+
+
+# --- Web UI & System Endpoints ---
+
+@app.get("/", response_class=HTMLResponse, include_in_schema=False)
+def index() -> str:
+    """Serve the Alta-styled Wynajmujemy.xyz marketplace frontend."""
+    return get_frontend_html()
 
 
 # --- Health & Autocheck Endpoints ---
